@@ -1,0 +1,682 @@
+html{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+body{
+     margin-top: 10px;
+     margin-right: 50px; 
+     margin-left: 50px;
+     margin-bottom: 10px;
+     font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    
+}
+
+header h2 {
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+header input {
+    display: flex;
+    align-self: center;
+    margin: auto;
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: #ededed;
+}
+
+
+.top-buttons{
+    display: flex;
+    margin-left: auto;
+}
+
+.btn {
+    display: flex;
+    align-self: center;
+    background-color: rgb(204, 204, 204); 
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    color: black; 
+    padding: 7px; 
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+  .btn2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: rgb(204, 204, 204);
+    border: 1px solid rgba(0, 0, 0, 0); 
+    border-radius: 30px;
+    width: 80px;
+    height: 30px;
+    color: black;
+    padding: 7px;
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .btn2:hover {
+    background-color: RoyalBlue;
+  }
+
+.nav-bar {
+    /* padding:30px 50px; */
+    font-weight: bold;
+    margin-left: auto 0; 
+    display:flex;
+    color:#FFF;
+    border-radius:4px;
+    border-bottom:1px solid #bbb;
+    border-top:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+.main-nav {
+    display: flex;
+    list-style:none;
+    font-size: 1em;
+    margin: 0;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.current a {
+    color: #2e7070;
+}
+
+
+
+.nav-bar button {
+display: flex;
+align-self:center;
+margin-left: auto;
+height: auto;
+background-color: rgb(0, 86, 160);
+color: white;
+border: none;
+border-radius: 4px;
+
+}
+
+.nav-bar button:hover {
+    cursor: pointer;
+}
+
+.container {
+    display: table-row;
+}
+
+.container p {
+    color: gray;
+    font-size: small;
+}
+
+
+.welcome {
+    display: table-cell;
+    width: 50%;
+}
+
+.welcome p {
+    margin: 0;
+    padding-top: 0;
+
+}
+.date {
+    display: table-cell;
+    width: 43%;
+    text-align: right;
+}
+
+
+
+.forum {
+    display: flex;
+    background-color: #faefdf;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.forum-words {
+    float: left;
+}
+
+
+.forum i {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    color: #2e7070;
+    width: 45px;
+    height: 45px;
+    font-size: 23px;
+    background-color: #c7e2e2;
+    margin-right: 10px;
+    
+}
+
+.forum p {
+ color: gray;
+ font-size: small;
+}
+
+.forum button {
+    background-color: #2e7070;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 8px;
+
+}
+
+.forum button:hover {
+    cursor: pointer;
+}
+
+.forum-btn {
+    display: flex;
+    float: right;
+    margin-left: auto;
+    align-self: center;
+    width: 130px;
+
+}
+
+.trending {
+    padding: 0 50px 100px 0;
+    /* overflow: scroll; */
+}
+
+.latest-news {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+.con3 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2.5em 2.5em 2.5em 2.5em 2.5em;
+    gap: 10px 210px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "news news subnews1 subnews1 latest1 latest1"
+      "news news subnews2 subnews2 latest2 latest2"
+      "news news subnews3 subnews3 latest3 latest3"
+      "news news subnews4 subnews4 latest4 latest4"
+      "donation donation donation donation chats chats"
+      "dono dono dono dono chat1 chat1"
+      "donation1 donation1 donation1 donation1 chat1 chat1"
+      "donation2 donation2 donation2 donation2 chat2 chat2"
+      "donation3 donation3 donation3 donation3 chat2 chat2";
+      width: 100%;
+      max-width: 100%;
+
+  }
+
+  .con3 img {
+    border: 1px solid black;
+  }
+  .news img {
+    width: 400px;
+    height: 450px;
+
+  }
+
+  .subnews1 img, .subnews2 img, .subnews3 img, .subnews4 img {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .latest1 img, .latest2 img, .latest3 img, .latest4 img {
+    width: 100px;
+    height: 100px;
+  }
+
+  
+    .subnews1 { 
+        grid-area: subnews1;
+
+    }
+
+  
+  .subnews2 { 
+    grid-area: subnews2; 
+}
+  
+  .subnews3 { 
+    grid-area: subnews3; 
+}
+  
+  .subnews4 { 
+    grid-area: subnews4; 
+}
+
+.subnews1 p, .subnews2 p, .subnews3 p, .subnews4 p {
+    float: right;
+  }
+  
+  .news { 
+    grid-area: news; 
+}
+  
+  .latest1 { 
+    grid-area: latest1; 
+}
+  
+  .latest2 { 
+    grid-area: latest2; 
+}
+  
+  .latest3 { 
+    grid-area: latest3; 
+}
+  
+  .latest4 {
+     grid-area: latest4; 
+    }
+
+.latest1 p, .latest2 p, .latest3 p, .latest4 p {
+    float: right;
+}
+  
+  .chats {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+     grid-area: chats; 
+     border: 1px solid gray;
+     border-radius: 4px;
+     border-bottom: none;
+     margin-bottom: -12px;
+     padding-left: 10px;
+     width: 100%;
+     justify-content: space-between;
+     
+    }
+  
+  .donation {
+    display: flex;
+    align-items: center;
+    grid-area: donation; 
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #ededed;
+    margin-bottom: -10px;
+    padding-left: 10px;
+    justify-content: space-between;
+    }
+  
+  .chat1 { 
+    display: flex;
+    grid-area: chat1; 
+    border: 1px solid gray;
+    border-radius: 4px;
+    border-bottom: none;
+    border-top: none;
+    margin-bottom: -12px;
+    padding-left: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.chat1 a, .chat2 a{ 
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.chat1 i, .chat2 i {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+
+    border-radius: 30px;
+    color: #2e7070;
+    width: 45px;
+    height: 45px;
+    font-size: 23px;
+    background-color: #c7e2e2;
+    margin-right: 10px;
+}
+
+.chat1 p, .chat2 p {
+    display: flex;
+
+    /* margin-left: auto; */
+    /* align-self: center; */
+    /* justify-content: flex-end; */
+    
+    width: max-content;
+}
+
+.time {
+    display: flex;
+
+    flex-direction: column;
+    
+    
+    justify-content: space-between;
+}
+
+.time p {
+    display: flex;
+    margin-left: auto;
+    
+
+}
+
+  
+  .chat2 { 
+    display: flex;
+    grid-area: chat2; 
+    border: 1px solid gray;
+    border-radius: 4px;
+    border-top: none;
+    /* margin-bottom: -10px; */
+    padding-left: 10px;
+    width: max-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    display: flex;
+    width: 100%;
+}
+  
+  .donation1 { 
+    display: flex;
+    grid-area: donation1; 
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #ededed;
+    margin-bottom: -10px;
+    padding-left: 10px;
+    font-weight: normal;
+    border-bottom: none;
+    border-top: none;
+}
+  
+  .donation2 { 
+    display: flex;
+    grid-area: donation2; 
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #ededed;
+    margin-bottom: -10px;
+    padding-left: 10px;
+    font-weight: normal;
+    border-bottom: none;
+    border-top: none;
+}
+  
+  .donation3 { 
+    display: flex;
+    grid-area: donation3; 
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #ededed;
+    margin-bottom: -10px;
+    padding-left: 10px;
+    font-weight: normal;
+    border-top: none;
+}
+  
+  .dono { 
+    display: flex;
+    grid-area: dono; 
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #ededed;
+    margin-bottom: -10px;
+    padding-left: 10px;
+    font-weight: normal;
+    border-bottom: none;
+    border-top: none;
+}
+  
+.candidate, .candidate1, .candidate2, .candidate3 {
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.project, .project1, .project2, .project3 {
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.amount, .amount1, .amount2, .amount3 {
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    margin-left: auto;
+    text-align: center;
+}
+
+.donation a {
+    display: flex;
+    color: rgb(193, 164, 0);
+    /* margin-left: 770px; */
+}
+
+.chats a {
+    display: flex;
+    color: rgb(193, 164, 0);
+    /* margin-left: 250px; */
+    
+}
+
+.time h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 223, 19);
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+.other-candidates {
+
+    background-color: #c7e2e2;
+    /* display: flex; 
+    align-items: center; 
+    justify-content: space-around;  */
+    text-align: center;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.other {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+.other a {
+    display: flex;
+    justify-content: flex-end;
+    color:rgb(193, 164, 0);
+}
+
+
+.img-container {
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    width: 300px;
+    overflow: hidden;
+    
+}
+
+.img-container img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.caption {
+    padding: 15px;
+    text-align: left;
+    overflow: hidden;
+    background-color: white;
+    border-top: 1px solid black;
+    font-weight: bold;
+
+}
+
+
+
+
+
+.con{
+	max-width: 2000px;
+	margin:auto;
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+    margin:0;
+	padding:0;
+}
+
+.footer-col{
+   width: 25%;
+
+}
+
+.footer-col p {
+    color: black;
+    margin-left: 20px;
+}
+
+.footer-col a {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    margin-left: 20px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: Black;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin-left: 20px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: Black;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
